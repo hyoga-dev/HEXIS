@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-
+import "../test.css"
 
 
 const test = () => {
@@ -11,6 +11,7 @@ const test = () => {
         <p>
             haiiasdasd
         </p>
+        
         {/* <Outlet/> */}
     </>
   );
