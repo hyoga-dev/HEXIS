@@ -8,12 +8,13 @@ const test = () => {
         <Link to="/contact">contact</Link> <br/>
         <Link to="/layout">layout</Link><br/>
         {/* <Link to="/layout">layout</Link> */}
+
+
+      
         <p>
-            haiiasdasd
+            haiisd
         </p>
-        <p>
-            haiiasdasd
-        </p>
+        <a href="/home"></a>
         
         {/* <Outlet/> */}
     </>
