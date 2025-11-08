@@ -11,6 +11,9 @@ const test = () => {
         <p>
             haiiasdasd
         </p>
+        <p>
+            haiiasdasd
+        </p>
         
         {/* <Outlet/> */}
     </>
