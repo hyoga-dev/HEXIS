@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../style/test.module.css"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Login from "./Login";
 
 function Test (prop) {
@@ -12,6 +12,14 @@ function Test (prop) {
   // const myStyle = {
   //   margin: "20px"
   // }
+
+  const [active, setActive] = useState(false);
+  const mystyle = {
+      padding: "20px",
+      backgroundColor: active ? "skyblue" : "red",
+      cursor: "pointer",
+    };
+
   return (
     <div className="m">
         <h1>
@@ -19,7 +27,7 @@ function Test (prop) {
         </h1>
         <Link to="/login">bambang</Link>
         <p>{anu}</p>
-        <button onClick={loging}>hai</button>
+        <button onClick={() => setActive(!active)} style={mystyle}>hai</button>
         <Login/>
     </div>
   );
