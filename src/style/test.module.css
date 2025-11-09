@@ -1,0 +1,24 @@
+.test {
+    color: red;
+    background-color: blue;
+    margin: 20px;
+}
+
+.tust {
+    composes: test;
+    padding: 20px;
+    text-decoration: none;
+}
+
+:global(.anu) {
+    text-decoration: none;
+}
+
+:global(.m) {
+    margin: 20px;
+}
+
+.n {
+    margin: 50px;
+    background-color: red;
+}

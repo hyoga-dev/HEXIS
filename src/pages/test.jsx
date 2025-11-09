@@ -1,24 +1,36 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../style/test.module.css"
+import { useEffect } from "react";
+import Login from "./Login";
 
-
-const test = () => {
+function Test (prop) {
+  useEffect(() => {
+    loging2();
+  }, []);
+  const anu = prop.text;
+  // const teststyle = `${styles.tust}, ${styles.test}`;
+  // const myStyle = {
+  //   margin: "20px"
+  // }
   return (
-    <>
-        <Link to="/contact">contact</Link> <br/>
-        <Link to="/layout">layout</Link><br/>
-        {/* <Link to="/layout">layout</Link> */}
-
-
-      
-        <p>
-            haiisd
-        </p>
-        <a href="/home"></a>
-        
-        {/* <Outlet/> */}
-    </>
+    <div className="m">
+        <h1>
+          bambang
+        </h1>
+        <Link to="/login">bambang</Link>
+        <p>{anu}</p>
+        <button onClick={loging}>hai</button>
+        <Login/>
+    </div>
   );
-};
+}
 
-export default test;
+function loging2 () {
+  console.log("huraaa");
+}
+
+function loging () {
+  console.log("haii");
+}
+
+export default Test;
